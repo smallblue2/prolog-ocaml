@@ -1,0 +1,40 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler5 
+
+****
+Euler problem 5: https://projecteuler.net/problem=5[].
+****
+
+// //////////////////////////////////////////////////////////////
+== Prolog
+
+.Task
+****
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
+****
+
+.Example invocation
+----
+$ swipl -s euler-5-smallest-multiple.pl -g start -t halt -- 5
+----
+.Example standard output
+----
+$ 60
+----
+.Explanation
+----
+60 is the smallest number that all numbers from 1 to 5 divide evenly into.
+----
