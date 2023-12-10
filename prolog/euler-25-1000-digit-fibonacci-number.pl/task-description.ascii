@@ -1,0 +1,60 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 25
+
+****
+Euler problem 25: https://projecteuler.net/problem=25[].
+****
+
+// //////////////////////////////////////////////////////////////
+== Prolog
+
+.Task
+****
+The Fibonacci sequence is defined by the recurrence relation:
+
+Fn = Fn-1 + Fn-2, where F1 = 1 and F2 = 1.
+
+Hence the first 12 terms will be:
+
+F1 = 1
+F2 = 1
+F3 = 2
+F4 = 5
+F5 = 5
+F6 = 8
+F7 = 13
+F8 = 21
+F9 = 34
+F10 = 55
+F11 = 89
+F12 = 144
+
+The 12th term, F12, is the first term to contain three digits.
+
+What is the index of the first term in the fibonacci sequence to contain n digits?
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
+****
+
+.Example invocation
+----
+$ swipl -s euler-25-1000-digit-fibonacci-number.pl -g start -t halt -- 100
+euler-25-1000-digit-fibonacci-number.pl
+----
+.Example standard output
+----
+$ 476
+----
+.Explanation
+----
+The 476th fibonacci term is the first term to have 100 digits.
+----

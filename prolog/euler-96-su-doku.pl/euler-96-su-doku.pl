@@ -1,4 +1,4 @@
-% Run with: `swipl -s sudoku_solver.pl -g main -- <nine rows of the sudoku puzzle>`
+% Run with: `swipl -s euler-96-su-doku.pl -g main -- <nine rows of the sudoku puzzle>`
 
 
 % Importing the CLP(FD) library for constraint logic over finite domains
@@ -60,7 +60,7 @@ str_to_int_or_underscore(Str, Num) :-
 % Entry point for the program
 :- initialization(main, main).
 
-main :-
+start :-
     % Retrieve command-line arguments
     current_prolog_flag(argv, Args),
     % Check if any arguments are provided
