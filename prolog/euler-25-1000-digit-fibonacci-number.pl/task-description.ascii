@@ -40,7 +40,7 @@ F12 = 144
 
 The 12th term, F12, is the first term to contain three digits.
 
-What is the index of the first term in the fibonacci sequence to contain n digits?
+What is the index of the first term in the fibonacci sequence to contain n digits (where n is a commandline)?
 
 Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
 ****
