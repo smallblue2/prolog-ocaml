@@ -1,0 +1,48 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 87
+
+****
+Euler problem 87: https://projecteuler.net/problem=87[].
+****
+
+// //////////////////////////////////////////////////////////////
+== OCaml
+
+.Task
+****
+The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is 28.
+In fact, there are exactly four numbers below fifty that can be expressed in such a way:
+
+    28 = 2^2 + 2^3 + 2^4
+    33 = 3^2 + 2^3 + 2^4
+    49 = 5^2 + 2^3 + 2^4
+    47 = 2^2 + 3^3 + 2^4
+
+How many numbers below n can be expressed as the sum of a prime square, prime cube, and prime fourth power,
+with n being a given integer command line argument?
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
+****
+
+.Example invocation
+----
+$ ./euler_87_prime_power_triples 50000000
+----
+.Example standard output
+----
+$ 1097343
+----
+.Explanation
+----
+The amount of numbers below 50000000 that can be expressed as the sum of a prime square, prime cube,
+and prime fourth power is 1097343.
+----

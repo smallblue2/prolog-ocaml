@@ -1,0 +1,38 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 179
+
+****
+Euler problem 179: https://projecteuler.net/problem=179[].
+****
+
+// //////////////////////////////////////////////////////////////
+== OCaml
+
+.Task
+****
+Find the number of integers 1 < n < the first commandline argument, for which n and n + 1 have the same number of positive divisors. For example, 14 has the positive divisors 1, 2, 7, 14 while 15 has 1, 3, 5, 15.
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
+****
+
+.Example invocation
+----
+$ ./euler_179_consecutive_positive_divisors 1000
+----
+.Example standard output
+----
+$ 118
+----
+.Explanation
+----
+The number of integers n < 1000 for which n and n + 1 have the same number of positive divisors is 118.
+----

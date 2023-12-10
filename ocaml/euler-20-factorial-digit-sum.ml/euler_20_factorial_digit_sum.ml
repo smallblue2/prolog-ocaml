@@ -37,6 +37,9 @@ let () =
     else
       try
         let x = int_of_string Sys.argv.(1) in (* take in command line arg *)
+        if x < 0 then 
+          Printf.printf "Invalid number given: %d\n" x
+        else
         let digits = factorial x in
         let sum = sum_digits digits in
         Printf.printf "%d\n" sum

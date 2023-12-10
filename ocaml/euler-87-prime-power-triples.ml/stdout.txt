@@ -1,0 +1,7 @@
+4
+1097343
+11610
+Invalid threshold value provided
+Random error
+Invalid integer
+Usage: ./euler_87_prime_power_triples <threshold>

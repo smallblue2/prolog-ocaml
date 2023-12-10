@@ -1,3 +1,12 @@
+(* check if command line args are valid *)
+let validateCmdLine =
+  if Array.length Sys.argv == 2 then
+    match int_of_string_opt Sys.argv.(1) with
+    | Some num -> (true, num)
+    | None -> (false, -1)
+    else
+      (false, -1)
+
 (* Remove multiples of a given number from a list *)
 let rec remove_multiples n = function
   | [] -> []
@@ -24,5 +33,8 @@ let rec print_list list =
   | x :: xs -> Printf.printf "%d; " x; print_list xs
 
 let () = 
-  let n = primes_up_to 1000
+  let (validity, num) = validateCmdLine
+  in if validity then 
+    let n = primes_up_to 1000
       in print_list n
+  else Printf.printf "Invalid argument!\n"

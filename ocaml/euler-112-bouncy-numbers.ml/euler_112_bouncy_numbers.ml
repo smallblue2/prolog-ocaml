@@ -40,7 +40,7 @@ let () =
     else
       try
         let target = int_of_string Sys.argv.(1) in  (* Parse as integer *)
-        if target > 100 || target < 0 then 
+        if target >= 100 || target <= 0 then 
           Printf.printf "Invalid percentage given: %d\n" target
         else
           let result = bouncy_counter target in

@@ -1,0 +1,8 @@
+648
+216
+342
+1
+1
+Invalid number given: -23
+Invalid integer
+Usage: ./euler_20_factorial_digit_sum <n>

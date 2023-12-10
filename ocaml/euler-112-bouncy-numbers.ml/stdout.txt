@@ -1,0 +1,8 @@
+1587000
+21780
+3088
+Invalid percentage given: 100
+Invalid percentage given: 0
+Invalid percentage given: -23
+Invalid integer
+Usage: ./euler_112_bouncy_numbers <target>

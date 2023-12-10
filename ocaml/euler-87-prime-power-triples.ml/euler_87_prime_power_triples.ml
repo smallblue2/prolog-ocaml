@@ -58,8 +58,8 @@ let () =
   else
     try
       let threshold = int_of_string Sys.argv.(1) in
-      if threshold <= 0 then
-        Printf.printf "Negative threshold value provided\n"
+      if threshold < 0 then
+        Printf.printf "Invalid threshold value provided\n"
       else
         let primes = sieve threshold in
         let sums = power_triples_calc primes threshold in
